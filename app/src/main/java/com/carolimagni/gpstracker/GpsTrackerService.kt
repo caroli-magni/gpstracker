@@ -137,7 +137,7 @@ class GpsTrackerService : Service() {
             }
             scope.launch {
                 val currentTime = Calendar.getInstance().time
-                client.post("https://ntfy.cs-fmd.xyz:8444/galaxy-coords") {
+                client.post("https://ntfy.xxx.xyz:1111/xxx") {
                     setBody("$currentTime ${this@Factory.displayableLocation}")
                 }
             }
