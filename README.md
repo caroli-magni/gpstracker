@@ -12,6 +12,7 @@ It will also toggle GPS on automatically if granted the WRITE_SECURE_SETTINGs pe
 
 To help prevent standbys affecting tracking:
 > adb shell am set-standby-bucket com.carolimagni.gpstracker never
+> adb shell dumpsys deviceidle whitelist +com.carolimagni.gpstracker
 
 To allow GPS Tracker to toggle GPS on if needed:
 > adb shell pm grant com.carolimagni.gpstracker android.permission.WRITE_SECURE_SETTINGS
